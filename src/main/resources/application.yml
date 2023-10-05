@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: training
+
+server:
+  port: 0
+
+eureka:
+  client:
+    fetch-registry: false
+    eureka-server-port: 8761
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${random.int}
